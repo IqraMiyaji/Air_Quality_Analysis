@@ -16,7 +16,7 @@ Achieved **76%+ accuracy** in both Mumbai and Cuttack using RNN models.
 
 ## 🎥 Demo
 
-[![Watch the video](https://github.com/yourusername/yourrepo/blob/main/your-thumbnail.png)](prototype_aqi.mp4)
+[![thumbnail](https://github.com/user-attachments/assets/3564b325-ec72-4d31-a53d-93920f1621c3)](https://drive.google.com/file/d/1O4g1La0qRpUpgUQJGbr07JhDZUv8PkMX/view?usp=sharing)
 
 📁 **Google Drive Backup:**  
 [Click to open Drive folder](https://drive.google.com/drive/folders/1NvrZ3rHPXfbF43-JT4elk-dBGKWYRu_q)
