@@ -1,75 +1,76 @@
 # Air_Quality_Analysis
-Air Quality Prediction using RNN A web app that forecasts PM1 levels across Indian regions using IMD, CPCB, and SNDTW UMIT data. It uses Linear Regression and RNN (76%+ accuracy) to provide real-time AQI, health advice, and a chatbot for pollution-related queries. Scalable for advanced data integration
 
-# 🌫️ Air Quality Forecasting and Health Recommendation System
+## 🌫️ Air Quality Prediction using RNN
 
-This project presents a data-driven web application for forecasting **PM1 (Particulate Matter)** concentrations across Indian regions using meteorological data from **IMD, CPCB, and SNDTW UMIT**. Leveraging **Linear Regression** and **Recurrent Neural Network (RNN)** models, the system delivers real-time air quality predictions, personalized health recommendations, and an intelligent chatbot assistant.
+A data-driven web app to forecast PM1, PM2.5, and PM10 levels across Indian cities using meteorological data from **IMD, CPCB, and SNDTW UMIT**.  
+It implements **Linear Regression** and **Recurrent Neural Networks (RNN)** to deliver:
 
----
+- 📈 Real-time AQI forecasting  
+- 🩺 Health recommendations  
+- 🤖 Chatbot to answer queries on pollution & risks  
+- 🌍 Scalable design for multi-city deployment  
 
-## 🎥 Project Demonstration
-
-<video width="100%" controls>
-  <source src="https://github.com/IqraMiyaji/Air_Quality_Analysis/blob/main/prototype_aqi.mp4?raw=true" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Achieved **76%+ accuracy** in both Mumbai and Cuttack using RNN models.
 
 ---
 
-📎 **[Access full report and project resources on Google Drive →](https://drive.google.com/drive/folders/1NvrZ3rHPXfbF43-JT4elk-dBGKWYRu_q)**
+## 🎥 Demo
+
+[![Watch the video](https://github.com/yourusername/yourrepo/blob/main/your-thumbnail.png)](prototype_aqi.mp4)
+
+📁 **Google Drive Backup:**  
+[Click to open Drive folder](https://drive.google.com/drive/folders/1NvrZ3rHPXfbF43-JT4elk-dBGKWYRu_q)
 
 ---
 
-## ✨ Key Features
+## 📊 Results & Observations
 
-- 🔍 Real-time AQI and PM1 prediction using live meteorological data
-- 📈 RNN model accuracy: 76% (Mumbai), 76.11% (Odisha-Cuttack)
-- 💬 Interactive chatbot for pollution-related health guidance
-- 🧠 Personalized health recommendations by population risk groups
-- 🌐 User-friendly web interface for immediate predictions
+### 🏙️ Mumbai
 
----
+**PM2.5 Equation:**
+```
+PM2.5 = 0.0000 * INDEX + 3.3150 * MAX - 4.6039 * MIN - 2.5933 * AW + 48.1042
+```
 
-## 📊 Results and Observations
+**PM10 Equation:**
+```
+PM10 = 0.0000 * INDEX + 7.6420 * MAX - 6.9687 * MIN - 4.1669 * AW + 15.7419
+```
 
-### 📍 Mumbai
+**📈 R² Score:** **0.7611**
 
-- **PM₂.₅** = 0.0000 × INDEX + 3.3150 × MAX − 4.6039 × MIN − 2.5933 × AW + 48.1042  
-- **PM₁₀** = 0.0000 × INDEX + 7.6420 × MAX − 6.9687 × MIN − 4.1669 × AW + 15.7419  
-- **R² Score:** 0.7611
-
-> Maximum temperature shows a positive correlation with PM levels. Minimum temperature and wind speed (AW) have a negative effect, especially on PM₁₀.
-
-### 📍 Odisha
-
-- **PM₂.₅** = 0.0000 × INDEX − 0.1707 × MAX − 3.0020 × MIN + 97.5438  
-- **PM₁₀** = 0.0000 × INDEX + 0.2133 × MAX − 10.1975 × MIN + 295.3829  
-- **R² Score:** 0.7569
-
-> Minimum temperature has a stronger negative influence on PM₁₀. INDEX showed negligible statistical significance in both states.
+✔️ Positive impact of MAX temperature  
+❌ Negative impact of MIN temperature and wind speed (AW)
 
 ---
 
-## 🧰 Tech Stack
+### 🌾 Odisha - Cuttack
 
-- **Languages & Frameworks:** Python, Flask / Django
-- **ML Libraries:** TensorFlow, Keras, Scikit-learn
-- **Frontend:** HTML, CSS, JavaScript
-- **Deployment:** GitHub, Google Drive (Docs + Demo)
+**PM2.5 Equation:**
+```
+PM2.5 = 0.0000 * INDEX - 0.1707 * MAX - 3.0020 * MIN + 97.5438
+```
+
+**PM10 Equation:**
+```
+PM10 = 0.0000 * INDEX + 0.2133 * MAX - 10.1975 * MIN + 295.3829
+```
+
+**📈 R² Score:** **0.7569**
+
+❌ Strong negative correlation with MIN temperature  
+➕ Slight positive correlation with MAX  
+🚫 INDEX was found statistically insignificant
 
 ---
 
-## 🔭 Future Enhancements
+## ⚙️ Features
 
-- Integration of real-world emission sources (e.g., traffic, industry)
-- Improved accuracy using hybrid and ensemble ML models
-- Advanced multilingual chatbot capabilities
-- Mobile app development for accessibility
+- 🔍 AQI predictions for PM1, PM2.5, PM10  
+- 👥 Personalized health-based feedback  
+- 🤖 Chatbot for environmental awareness  
+- 📊 Linear Regression & RNN models  
+- 📱 Clean UI & mobile-friendly experience  
 
 ---
 
-## 🤝 Contribution
-
-Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests.
-
-> Built with a focus on environmental health, public awareness, and real-world impact.
