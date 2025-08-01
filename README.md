@@ -2,7 +2,7 @@
 
 ## 🌫️ Air Quality Prediction using RNN
 
-A data-driven web app to forecast PM1, PM2.5, and PM10 levels across Indian cities using meteorological data from **IMD, CPCB, and SNDTW UMIT**.  
+A data-driven website to forecast PM1, PM2.5, and PM10 levels across Indian cities using meteorological data from **IMD, CPCB, and SNDTW UMIT**.  
 It implements **Linear Regression** and **Recurrent Neural Networks (RNN)** to deliver:
 
 - 📈 Real-time AQI forecasting  
